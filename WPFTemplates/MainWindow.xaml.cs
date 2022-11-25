@@ -23,6 +23,7 @@ namespace WPFTemplates
         public MainWindow()
         {
             InitializeComponent();
+            
         }
     }
 }

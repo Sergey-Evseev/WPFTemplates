@@ -6,11 +6,65 @@
         xmlns:local="clr-namespace:WPFTemplates"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    
+   
+    <Grid Grid.IsSharedSizeScope="True">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+            
+
+        <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="169*"/>
-            <ColumnDefinition Width="31*"/>
-        </Grid.ColumnDefinitions>
+                <ColumnDefinition SharedSizeGroup="Column"
+                                  Width="150"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+         </Grid.ColumnDefinitions>
+
+            <Border Background="Indigo" Grid.Column="2"
+                    CornerRadius="300, 200, 150, 50"
+                    Margin="10"  
+                    
+                    />
+            
+
+            <Border Background="Coral"
+                    CornerRadius="15"
+                    Margin="10"  
+            
+                    
+                    />
+            <Border Background="DarkOrange" Grid.Column="1"
+                    CornerRadius="500"
+                    />
+
+
+        </Grid>
+
+        
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Border Background="Red" Grid.Column="0"
+                    CornerRadius="15"
+                    Margin="10"  />
+            <Border Background="Cyan" Grid.Column="1"
+                    CornerRadius="15"
+                    Margin="10"  />
+            <Border Background="Lime" Grid.Column="2"
+                    CornerRadius="15"
+                    Margin="10"  />
+            <!--Comments-->
+        </Grid>              
+        
 
     </Grid>
+
 </Window>
